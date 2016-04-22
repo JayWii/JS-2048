@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue";
+}
+body {
+  background-color: #63D3C5;
+}
+header {
+  overflow: hidden;
+}
+.gameContainer {
+  width: 500px;
+  margin: 80px auto;
+}
+.score {
+  height: 100px;
+}
+.score h1 {
+  float: left;
+  font-size: 80px;
+  font-weight: bold;
+  color: #FBFCFC;
+}
+.score div {
+  float: right;
+  width: 80px;
+  height: 60px;
+  margin: 20px;
+  padding-top: 5px;
+  background-color: #D2F0A7;
+  border-radius: 10px;
+  color: #37C1C4;
+  font-weight: bold;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.score-num {
+  font-size: 30px;
+}
+.newGame {
+  float: right;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #FEC13A;
+  color: #fff;
+  margin: 20px;
+  text-align: center;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.grid {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin-top: 40px;
+  padding: 10px;
+  background-color: #B6E5DF;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.grid-cell {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background-color: #37C1C4;
+  margin: 10px;
+  font-size: 60px;
+  line-height: 100px;
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  border-radius: 5px;
+}
