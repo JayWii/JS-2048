@@ -4,6 +4,7 @@ var best = 0; //玩家最高等分
 var hasConflicted = []; //用二维数组储存每个格子每一轮中的合并状态，合并过为true，没有为false;
 
 function newGame() {
+    $(".mes").css("display", "none");
     //初始化元素
     init();
 
@@ -288,9 +289,6 @@ $(function() {
         newGame();
     });
 
-    touch.on('.grid-container', 'touchstart', function(ev) {
-        ev.preventDefault();
-    });
     touch.on('.grid-container', 'swipeup', function(ev) {
       if (moveUp(board)) {
           //等待移动动画完成之后再创建新元素

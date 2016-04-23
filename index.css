@@ -147,6 +147,9 @@ footer {
     height: 60px;
     margin: 0;
   }
+  .score-num {
+    font-size: 23px;
+  }  
   .newGame {
     width: 280px;
     margin: 0;
