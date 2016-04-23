@@ -40,7 +40,6 @@ function init() {
     updateBoardView();
     score = 0;
     $("#score").text(score);
-    $(".mes").css("display", "none");
 }
 //根据数组将数字布局到栅格中
 function updateBoardView() {
