@@ -13,6 +13,15 @@ header {
   width: 500px;
   margin: 80px auto;
 }
+footer {
+  margin: 40px 20px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-family: Lora,'Times New Roman',serif;
+  font-style: italic;
+  font-weight: lighter;
+}
 .score {
   height: 100px;
 }
@@ -119,4 +128,49 @@ header {
   font-size: 25px;
   color: #011832;
   font-weight: bold;
+}
+
+@media screen and (max-width: 520px) {
+  .gameContainer {
+    width: 280px;
+    margin: 30px auto;
+  }
+  .score {
+    height: 80px;
+  }
+  .score h1 {
+    font-size: 50px;
+    margin-top: 5px;
+  }
+  .score div {
+    width: 100px;
+    height: 60px;
+    margin: 0;
+  }
+  .newGame {
+    width: 280px;
+    margin: 0;
+  }
+  .grid-container {
+    width: 280px;
+    height: 280px;
+    margin-top: 20px;
+    padding: 5px;
+  }
+  .grid-cell-bg {
+    margin: 5px;
+  }
+  .grid-cell-common {
+    width: 57.5px;
+    height: 57.5px;
+    line-height: 57.5px;
+  }
+  .mes h1 {
+    font-size: 30px;
+  }
+  .mes button {
+    width: 40%;
+    height: 10%;
+    font-size: 16px;
+  }
 }

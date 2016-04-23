@@ -1,9 +1,18 @@
+//获取当前设备屏幕宽度
+screenWidth = screen.availWidth;
 //获取当前元素Position Top值
 function getPosTop(row) {
+  console.log(screenWidth);
+  if (screenWidth <= 520) {
+    return 67.5*row + 5;
+  }
   return 120*row + 10;
 }
 //获取当前元素Position Left值
 function getPosLeft(col) {
+  if (screenWidth <= 520) {
+    return 67.5*col + 5;
+  }
   return 120*col + 10;
 }
 //根据数值大小设置cell颜色
@@ -34,9 +43,15 @@ function getNumberColor(num) {
 //根据数字大小设置字体
 function getNumberSize(num) {
   if (num%1000) {
+    if (screenWidth <= 520) {
+      return 22;
+    }
     return 40;
   }
   if (num%100) {
+    if (screenWidth <= 520) {
+      return 28;
+    }
     return 50;
   }
 }

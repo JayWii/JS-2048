@@ -1,3 +1,5 @@
+//获取当前设备屏幕宽度
+screenWidth = screen.availWidth;
 //创建新元素时的动画
 function showNewNumber(row,col,num) {
   var gridcell = $(".grid-cell-" + (row + 1) + "-" + (col + 1));
@@ -7,12 +9,21 @@ function showNewNumber(row,col,num) {
   gridcell.css("font-size",getNumberSize(num));
   gridcell.text(num);
 
-  gridcell.animate({
-    width:"100px",
-    height:"100px",
-    top:getPosTop(row),
-    left:getPosLeft(col)
-  },100);
+  if (screenWidth <= 520 ) {
+    gridcell.animate({
+      width:"57.5px",
+      height:"57.5px",
+      top:getPosTop(row),
+      left:getPosLeft(col)
+    },100);
+  }else {
+    gridcell.animate({
+      width:"100px",
+      height:"100px",
+      top:getPosTop(row),
+      left:getPosLeft(col)
+    },100);
+  }
 }
 //移动动画
 function showMoveAnimation(fromX,fromY,toX,toY) {
