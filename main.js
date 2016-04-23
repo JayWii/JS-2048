@@ -289,6 +289,9 @@ $(function() {
         newGame();
     });
 
+    touch.on('.grid-container', 'touchstart', function(ev) {
+        ev.preventDefault();
+    });
     touch.on('.grid-container', 'swipeup', function(ev) {
       if (moveUp(board)) {
           //等待移动动画完成之后再创建新元素
@@ -299,25 +302,19 @@ $(function() {
     });
     touch.on('.grid-container', 'swiperight', function(ev) {
       if (moveRight(board)) {
-          //等待移动动画完成之后再创建新元素
           setTimeout("createOneNumber()", 150);
-          //等待新元素创建完毕之后再判断
           setTimeout("isGameOver()", 200);
       }
     });
     touch.on('.grid-container', 'swipeleft', function(ev) {
       if (moveLeft(board)) {
-          //等待移动动画完成之后再创建新元素
           setTimeout("createOneNumber()", 150);
-          //等待新元素创建完毕之后再判断
           setTimeout("isGameOver()", 200);
       }
     });
     touch.on('.grid-container', 'swipedown', function(ev) {
       if (moveDown(board)) {
-          //等待移动动画完成之后再创建新元素
           setTimeout("createOneNumber()", 150);
-          //等待新元素创建完毕之后再判断
           setTimeout("isGameOver()", 200);
       }
     });

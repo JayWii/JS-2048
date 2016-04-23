@@ -2,7 +2,6 @@
 screenWidth = screen.availWidth;
 //获取当前元素Position Top值
 function getPosTop(row) {
-  console.log(screenWidth);
   if (screenWidth <= 520) {
     return 67.5*row + 5;
   }
