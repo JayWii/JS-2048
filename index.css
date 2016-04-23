@@ -24,7 +24,7 @@ header {
 }
 .score div {
   float: right;
-  width: 80px;
+  width: 100px;
   height: 60px;
   margin: 20px;
   padding-top: 5px;
@@ -44,8 +44,8 @@ header {
   cursor: pointer;
   float: right;
   width: 200px;
-  height: 40px;
-  line-height: 40px;
+  height: 50px;
+  line-height: 50px;
   font-size: 20px;
   font-weight: bold;
   background-color: #FEC13A;
@@ -90,4 +90,33 @@ header {
 .grid-above {
   position: absolute;
   z-index: 2;
+}
+.mes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 9, 19, 0.6);
+  z-index: 10;
+}
+.mes h1 {
+  font-size: 55px;
+  color: #fff;
+  margin-bottom: 10%;
+}
+.mes button {
+  cursor: pointer;
+  width: 40%;
+  height: 8%;
+  border: none;
+  border-radius: 10px;
+  background-color: #FEC942;
+  font-size: 25px;
+  color: #011832;
+  font-weight: bold;
 }

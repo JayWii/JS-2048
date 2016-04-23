@@ -24,3 +24,10 @@ function showMoveAnimation(fromX,fromY,toX,toY) {
     left: getPosLeft(toY)
   },200);
 }
+//更新分数
+function updateScore(score,best) {
+  $("#score").text(score);
+  if (score > best) {
+    $("#best").text(score);
+  }
+}

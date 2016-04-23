@@ -1,9 +1,12 @@
+//获取当前元素Position Top值
 function getPosTop(row) {
   return 120*row + 10;
 }
+//获取当前元素Position Left值
 function getPosLeft(col) {
   return 120*col + 10;
 }
+//根据数值大小设置cell颜色
 function getGridCellColor(num) {
   switch (num) {
     case 2:return "#FFE59B";break;
@@ -117,4 +120,12 @@ function noBlockH(row,col1,col2,board) {
     }
   }
   return true;
+}
+//判断是不是已经无法移动了
+function isCanNotMove(board) {
+  if (canMoveDown(board) || canMoveLeft(board) || canMoveRight(board) || canMoveUp(board)) {
+    return false;
+  }else {
+    return true;
+  }
 }
