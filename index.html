@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 <head>
   <meta charset="UTF-8">
   <title>My-2048</title>
@@ -24,34 +24,39 @@
         New Game
       </section>
     </header>
-    <section class="grid">
-        <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell">2</div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-        </div>
+    <section class="grid-container">
+      <section class="grid">
+          <div class="grid-row">
+            <div class="grid-cell-bg grid-cell-common"></div>
+            <div class="grid-cell-bg grid-cell-common"></div>
+            <div class="grid-cell-bg grid-cell-common"></div>
+            <div class="grid-cell-bg grid-cell-common"></div>
+          </div>
+          <div class="grid-row">
+            <div class="grid-cell-bg grid-cell-common"></div>
+            <div class="grid-cell-bg grid-cell-common"></div>
+            <div class="grid-cell-bg grid-cell-common"></div>
+            <div class="grid-cell-bg grid-cell-common"></div>
+          </div>
+          <div class="grid-row">
+            <div class="grid-cell-bg grid-cell-common"></div>
+            <div class="grid-cell-bg grid-cell-common"></div>
+            <div class="grid-cell-bg grid-cell-common"></div>
+            <div class="grid-cell-bg grid-cell-common"></div>
+          </div>
+          <div class="grid-row">
+            <div class="grid-cell-bg grid-cell-common"></div>
+            <div class="grid-cell-bg grid-cell-common"></div>
+            <div class="grid-cell-bg grid-cell-common"></div>
+            <div class="grid-cell-bg grid-cell-common"></div>
+          </div>
+      </section>
+      <section class="grid-above"></section>
     </section>
   </div>
   <script src="jquery.min.js" charset="utf-8"></script>
-  <script src="index.js" charset="utf-8"></script>
+  <script src="support.js" charset="utf-8"></script>
+  <script src="animation.js" charset="utf-8"></script>
+  <script src="main.js" charset="utf-8"></script>
 </body>
 </html>

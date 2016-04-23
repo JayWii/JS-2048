@@ -41,6 +41,7 @@ header {
   font-size: 30px;
 }
 .newGame {
+  cursor: pointer;
   float: right;
   width: 200px;
   height: 40px;
@@ -54,29 +55,39 @@ header {
   border-radius: 6px;
   overflow: hidden;
 }
-.grid {
+.grid-container {
   position: relative;
   width: 500px;
   height: 500px;
   margin-top: 40px;
   padding: 10px;
-  background-color: #B6E5DF;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   overflow: hidden;
+  background-color: #B6E5DF;
   border-radius: 10px;
 }
-.grid-cell {
+.grid {
+  position: absolute;
+  z-index: 1;
+}
+.grid-cell-bg {
   float: left;
+  background-color: #7ED6D0;
+  margin: 10px;
+}
+.grid-cell-common {
   width: 100px;
   height: 100px;
-  background-color: #37C1C4;
-  margin: 10px;
   font-size: 60px;
   line-height: 100px;
   text-align: center;
   color: #fff;
-  font-weight: 400;
+  font-weight: 500;
   border-radius: 5px;
+}
+.grid-above {
+  position: absolute;
+  z-index: 2;
 }
