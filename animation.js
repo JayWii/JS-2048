@@ -33,7 +33,7 @@ function showMoveAnimation(fromX,fromY,toX,toY) {
   cell.animate({
     top: getPosTop(toX),
     left: getPosLeft(toY)
-  },200);
+  },120);
 }
 //更新分数
 function updateScore(score,best) {

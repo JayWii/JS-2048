@@ -134,7 +134,7 @@ function moveUp(board) {
                 }
             }
         }
-        setTimeout("updateBoardView()", 200);
+        setTimeout("updateBoardView()", 150);
         return true;
     }
 }
@@ -169,7 +169,7 @@ function moveRight(board) {
                 }
             }
         }
-        setTimeout("updateBoardView()", 200);
+        setTimeout("updateBoardView()", 150);
         return true;
     }
 }
@@ -204,7 +204,7 @@ function moveDown(board) {
                 }
             }
         }
-        setTimeout("updateBoardView()", 200);
+        setTimeout("updateBoardView()", 150);
         return true;
     }
 }
@@ -239,7 +239,7 @@ function moveLeft(board) {
                 }
             }
         }
-        setTimeout("updateBoardView()", 200);
+        setTimeout("updateBoardView()", 150);
         return true;
     }
 }
@@ -250,27 +250,27 @@ $(document).keydown(function(event) {
         case 38: //up
             if (moveUp(board)) {
                 //等待移动动画完成之后再创建新元素
-                setTimeout("createOneNumber()", 200);
+                setTimeout("createOneNumber()", 150);
                 //等待新元素创建完毕之后再判断
-                setTimeout("isGameOver()", 250);
+                setTimeout("isGameOver()", 200);
             }
             break;
         case 39: //right
             if (moveRight(board)) {
-                setTimeout("createOneNumber()", 200);
-                setTimeout("isGameOver()", 250);
+                setTimeout("createOneNumber()", 150);
+                setTimeout("isGameOver()", 200);
             }
             break;
         case 40: //down
             if (moveDown(board)) {
-                setTimeout("createOneNumber()", 200);
-                setTimeout("isGameOver()", 250);
+                setTimeout("createOneNumber()", 150);
+                setTimeout("isGameOver()", 200);
             }
             break;
         case 37: //left
             if (moveLeft(board)) {
-                setTimeout("createOneNumber()", 200);
-                setTimeout("isGameOver()", 250);
+                setTimeout("createOneNumber()", 150);
+                setTimeout("isGameOver()", 200);
             }
             break;
         default:
@@ -284,6 +284,7 @@ $(function() {
         newGame();
     });
     $("#tryAgain").click(function() {
+        $(".mes").css("display", "none");
         newGame();
     });
 
@@ -293,33 +294,33 @@ $(function() {
     touch.on('.grid-container', 'swipeup', function(ev) {
       if (moveUp(board)) {
           //等待移动动画完成之后再创建新元素
-          setTimeout("createOneNumber()", 200);
+          setTimeout("createOneNumber()", 150);
           //等待新元素创建完毕之后再判断
-          setTimeout("isGameOver()", 250);
+          setTimeout("isGameOver()", 200);
       }
     });
     touch.on('.grid-container', 'swiperight', function(ev) {
       if (moveRight(board)) {
           //等待移动动画完成之后再创建新元素
-          setTimeout("createOneNumber()", 200);
+          setTimeout("createOneNumber()", 150);
           //等待新元素创建完毕之后再判断
-          setTimeout("isGameOver()", 250);
+          setTimeout("isGameOver()", 200);
       }
     });
     touch.on('.grid-container', 'swipeleft', function(ev) {
       if (moveLeft(board)) {
           //等待移动动画完成之后再创建新元素
-          setTimeout("createOneNumber()", 200);
+          setTimeout("createOneNumber()", 150);
           //等待新元素创建完毕之后再判断
-          setTimeout("isGameOver()", 250);
+          setTimeout("isGameOver()", 200);
       }
     });
     touch.on('.grid-container', 'swipedown', function(ev) {
       if (moveDown(board)) {
           //等待移动动画完成之后再创建新元素
-          setTimeout("createOneNumber()", 200);
+          setTimeout("createOneNumber()", 150);
           //等待新元素创建完毕之后再判断
-          setTimeout("isGameOver()", 250);
+          setTimeout("isGameOver()", 200);
       }
     });
 });
