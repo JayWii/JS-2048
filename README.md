@@ -1,6 +1,6 @@
 # 2048
 
-Made just for fun. [Play it here!](http://jaywii.github.io/protfolio/JS-2048/)
+Made just for fun. [Play it here!](http://jaywii.coding.me/protfolio/JS-2048/)
 
 
 ### Screenshot
